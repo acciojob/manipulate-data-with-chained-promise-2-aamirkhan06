@@ -13,8 +13,8 @@ delay(1000).then(() => {
     // Filter out odd numbers
     inputArray = inputArray.filter(num => num % 2 === 0);
 	const outputDiv = document.getElementById('output');
-    outputDiv.textContent = inputArray.join(', ');
-    return delay(1000);
+    outputDiv.textContent = inputArray.join(',');
+    return delay(2000);
   })
   .then(()=> {
     // Multiply even numbers by 2
@@ -24,7 +24,7 @@ delay(1000).then(() => {
   .then(resultArray => {
     // Update the output div with the result
     const outputDiv = document.getElementById('output');
-    outputDiv.textContent = resultArray.join(', ');
+    outputDiv.textContent = resultArray.join(',');
   })
   .catch(error => {
     console.error('An error occurred:', error);
